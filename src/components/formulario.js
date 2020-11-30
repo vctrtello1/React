@@ -15,10 +15,14 @@ const Formulario = () => {
 
     }
 
+    const enviarDatos = (event)=>{
+        event.preventDefault();
+    }
+
     return (
         <Fragment>
             <h1>Formulario</h1>
-            <form className="row">
+            <form className="row" onSubmit={enviarDatos}>
                 <div className="col-md-3">
                     <input
                         placeholder="Ïngresar nombre"
